@@ -1,0 +1,32 @@
+/* 
+
+Variables, reset, globals
+
+*/
+
+
+:root {
+
+    /* ------- Colors -------*/
+    --color-bg-dark: #1F2937;
+    --color-text-hero-main: #F9FAF8;
+    --color-text-hero-secondary: #E5E7EB;
+    --color-text-header-logo: #F9FAF8;
+    --color-bg-button: #E5E7EB;
+    --color-text-quote: #1F2937;  
+
+    /* ------- Font sizes -------*/
+    --font-size-hero-main: 48px;
+    --font-size-hero-secondary: 18px;
+    --font-size-header-logo: 24px;
+    --font-size-quote: 36px;  
+
+    /* ------- Font weights -------*/
+    --font-weight-extrabold: 800;
+    --font-weight-light: 300; 
+
+    /* ------- Font styles -------*/
+    --font-style-italic: italic;
+
+}
+

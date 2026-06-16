@@ -1,0 +1,27 @@
+/*  ---------------------------------------
+    BREAKPOINTS.CSS — Reference only
+    ---------------------------------------
+
+    Agreed breakpoints:
+    ---------------------------------------
+    Mobile (default / no media query needed) :  < 640px
+    Tablet                                   : 640px
+    Desktop                                  : 1024px           
+    Large desktop                            : 1280px
+
+*/
+
+/*
+    Usage in any section: 
+
+    .hero {
+        flex-direction: column;
+    }
+
+    @media (min-width: 640px) {
+        .hero {
+            flex-direction: row;
+        }
+    }
+
+*/ 
