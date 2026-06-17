@@ -28,7 +28,7 @@ Variables, reset, globals
     --color-text-hero-main: #F9FAF8;
     --color-text-hero-secondary: #E5E7EB;
     --color-text-header-logo: #F9FAF8;
-    --color-bg-button: #E5E7EB;
+    --color-bg-button: #3882F6;
     --color-text-quote: #1F2937;  
 
     --font-size-hero-main: 3rem;
@@ -50,7 +50,11 @@ Variables, reset, globals
     font-family: 'Roboto', sans-serif;
 }
 
-img, picture, video, canvas, svg {
+body {
+    width: 100vw;
+}
+
+img, picture, svg {
     display: block; /* avoids inline issues like line-height automatically applied by browsers*/
     max-width: 100%; /* prevents images from growing beyond its container*/
 }
