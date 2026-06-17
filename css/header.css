@@ -1,0 +1,7 @@
+header {
+    width: 100vw;
+    background-color: var(--color-bg-dark);
+    display: flex;
+    justify-content: space-between; 
+}
+

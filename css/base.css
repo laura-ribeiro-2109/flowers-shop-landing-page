@@ -3,11 +3,27 @@
 Variables, reset, globals
 
 */
+@font-face {
+    font-family: 'RobotoItalic';
+    src: url(/fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+}
 
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
 
 :root {
 
-    /* ------- Colors -------*/
+    /*------- Basic scale ---------*/
+    --space-1: 0.5rem;  /* 8px */
+    --space-2: 1rem;    /* 16px */
+    --space-3: 1.5rem;    /* 24px */
+    --space-4: 2rem;    /* 32px */
+    --space-5: 3rem;    /* 48px */
+    --space-6: 4rem;    /* 64px */
+    --space-7: 6rem;    /* 96px */
+
     --color-bg-dark: #1F2937;
     --color-text-hero-main: #F9FAF8;
     --color-text-hero-secondary: #E5E7EB;
@@ -15,18 +31,34 @@ Variables, reset, globals
     --color-bg-button: #E5E7EB;
     --color-text-quote: #1F2937;  
 
-    /* ------- Font sizes -------*/
-    --font-size-hero-main: 48px;
-    --font-size-hero-secondary: 18px;
-    --font-size-header-logo: 24px;
-    --font-size-quote: 36px;  
+    --font-size-hero-main: 3rem;
+    --font-size-hero-secondary: 1.125rem;
+    --font-size-header-logo: 1.5rem;
+    --font-size-quote: 2.25rem;  
 
-    /* ------- Font weights -------*/
     --font-weight-extrabold: 800;
     --font-weight-light: 300; 
-
-    /* ------- Font styles -------*/
     --font-style-italic: italic;
 
 }
 
+/*--------- Basic reset ---------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+    display: block; /* avoids inline issues like line-height automatically applied by browsers*/
+    max-width: 100%; /* prevents images from growing beyond its container*/
+}
+
+a {
+    text-decoration: none;
+}
+
+ul>li {
+    list-style-type: none;
+}
