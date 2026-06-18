@@ -3,12 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Petal&Stem</title>
     <link rel="stylesheet" href="./css/base.css"> 
+    <link rel="stylesheet" href="./css/header.css"> 
     <link rel="stylesheet" href="./css/hero.css"> 
 
 </head>
+
 <body>
-    <h1 class="hero-background">HEllo there</h1>
+    <header>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <img src="./assets/logo/Petal-Stem-Logo.svg" alt="Petal&Stem Logo">
+        <label for="menu-toggle" class="hamburger" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>  
+        <nav aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="./pages/products.html">Shop</a>
+                </li>
+                <li>
+                    <a href="./pages/about.html">About</a>
+                </li>
+                <li>
+                    <a href="./pages/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="hero__title">Flowers for every moment</h1>
+                <p class="hero__text">
+                Hand-tied bouquets made fresh every morning with locally grown flowers. 
+                Same-day delivery available across town
+                </p>
+                <a href="./pages/products.html" class="hero__button">Shop Now</a>
+            </div>
+
+            <div class="hero__media">
+                <img class="hero__image" src="./assets/images/homepage/hero_image.png" alt="Photo of a fresh seasonal bouquet">
+            </div>
+        </section>
+    </main>
 </body>
-</html>
+</html>   
