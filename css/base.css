@@ -31,13 +31,13 @@ Variables, reset, globals
     --color-bg-button: #3882F6;
     --color-text-quote: #1F2937;  
 
-    --font-size-hero-main: 3rem;
-    --font-size-hero-secondary: 1.125rem;
-    --font-size-header-logo: 1.5rem;
-    --font-size-quote: 2.25rem;  
+    --font-size-hero-main:      clamp(2rem, 1.648rem + 1.408vw, 3rem);     /* 32px → 48px */
+    --font-size-hero-secondary: clamp(1rem, 0.956rem + 0.176vw, 1.125rem); /* 16px → 18px */
+    --font-size-quote:          clamp(1.5rem, 1.236rem + 1.056vw, 2.25rem);/* 24px → 36px */
 
-    --font-weight-extrabold: 800;
+    --font-weight-extrabold: 900;
     --font-weight-light: 300; 
+    --font-weight-regular: 400; 
     --font-style-italic: italic;
 
 }
