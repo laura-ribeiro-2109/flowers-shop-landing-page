@@ -1,0 +1,13 @@
+footer {
+    padding-block: var(--space-4);
+    background-color: var(--color-bg-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h6 {
+    color: var(--color-text-hero-main);
+    font-weight: var(--font-weight-regular);
+}

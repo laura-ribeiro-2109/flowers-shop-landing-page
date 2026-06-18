@@ -9,6 +9,7 @@ header {
 }
 
 .logo {
+    margin: 0 0.25rem;
     z-index: 11;
 }
 
