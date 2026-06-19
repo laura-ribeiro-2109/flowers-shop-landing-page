@@ -72,7 +72,6 @@
 /* Desktop & Horizontal Tablet */
 @media (min-width: 1024px) {
     .features {
-        /* padding-inline: 0; */
         margin-inline: var(--space-6);
     }
 

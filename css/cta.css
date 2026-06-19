@@ -1,18 +1,33 @@
-.cta{
-    background-color: var(--color-bg-button);
-    color: white;
-    margin: var(--space-6) var(--space-7);
-    padding: var(--space-5) var(--space-7);
-    display: flex;
-    justify-content: space-between;
-    border-radius: 6px;
+.banner {
+    padding-block: var(--space-5);
+    margin-inline: var(--space-2);
 }
 
-.cta__btn {
-    padding: var(--space-1) var(--space-3);
+.banner__content {
+    background-color: var(--color-bg-button);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    border-radius: 6px;
+    padding: 24px 36px;
+}
+
+.banner__text {
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+
+.banner__text h3 {
+    padding-bottom: var(--space-1);
+}
+
+.banner__cta a {
+    padding: 8px 16px;
     border: 2px solid white;
     border-radius: 6px;
     display: flex;
+    justify-content: center;
     align-items: center;
     color: white;
     text-decoration: none;
@@ -20,14 +35,26 @@
 
 /*----------------------- Media Queries -----------------------*/
 
-@media (max-width: 1280px) {
-    .cta {
-        display: grid;
-        gap: var(--space-2);
-        justify-content: center;
+
+/* Tablet */
+@media (min-width: 768px) {
+    .banner__content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .cta__btn {
-        justify-content: center;
+    .banner__text {
+        line-height: 1.5;
+        text-align: start;
+        color: #fff;
+    }   
+}
+
+/* Desktop & Horizontal Tablet */
+@media (min-width: 1024px) {
+    .banner {
+        margin-inline: calc(var(--space-7) * 2);
     }
+
 }
