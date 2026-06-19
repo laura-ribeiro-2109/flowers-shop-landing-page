@@ -25,6 +25,7 @@
 .hero__text {
     color: var(--color-text-hero-secondary);
     font-size: var( --font-size-hero-secondary);
+    line-height: 1.5;
 }
 
 .hero__button {
