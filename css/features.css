@@ -28,10 +28,15 @@
     width: 100%;
     border: 3px solid var(--color-border);
     border-radius: 20px;
-    margin-bottom: 10px;
+}
+
+.features__card h3 {
+    font-weight: var(--font-weight-extrabold);
+    padding-block: var(--space-1)
 }
 
 .features__text {
+    line-height: 1.5;
     color: var(--color-text-dark);
     font-size: var(--font-size-body)
 }
@@ -59,10 +64,6 @@
         align-items: center;
     }
 
-    figure {
-        width: 100%;
-    }
-
     .features__image {
         width: 100%;
     }
@@ -77,10 +78,6 @@
 
     .features__cards {
         flex-direction: row;
-    }
-
-    figure {
-        width: 100%;
     }
 
     .features__image {

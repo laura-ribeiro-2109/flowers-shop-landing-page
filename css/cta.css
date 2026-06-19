@@ -1,23 +1,33 @@
-.cta {
-   background-color: white;
-}
-
-.cta-box {
-    background-color: #3882F6;
+.cta{
+    background-color: var(--color-bg-button);
     color: white;
-    margin: 60px 15%;
-    padding: 40px 10%;
+    margin: var(--space-6) var(--space-7);
+    padding: var(--space-5) var(--space-7);
     display: flex;
     justify-content: space-between;
     border-radius: 6px;
 }
 
-.cta-btn {
-    padding: 6px 20px;
+.cta__btn {
+    padding: var(--space-1) var(--space-3);
     border: 2px solid white;
     border-radius: 6px;
     display: flex;
     align-items: center;
     color: white;
     text-decoration: none;
+}
+
+/*----------------------- Media Queries -----------------------*/
+
+@media (max-width: 1280px) {
+    .cta {
+        display: grid;
+        gap: var(--space-2);
+        justify-content: center;
+    }
+
+    .cta__btn {
+        justify-content: center;
+    }
 }

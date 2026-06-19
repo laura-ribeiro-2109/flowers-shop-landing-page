@@ -17,6 +17,11 @@
     
 }
 
+.testimonials__signature span {
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-small);
+}
+
 .testimonials__signature {
     font-weight: var(--font-weight-extrabold);
     text-align: right;
