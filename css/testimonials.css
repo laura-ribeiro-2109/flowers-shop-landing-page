@@ -1,23 +1,53 @@
 .testimonials {
-    background-color: #E5E7EB;
-    font-size: var(--font-size-quote);
-    font-style: var(--font-style-italic);
+    background-color: var(--color-bg-quote);
     color: var(--color-text-quote);
-    padding: 80px 20%;
+    padding-block: var(--space-5);
+    margin-block: var(--space-5);
 }
 
-.testimonials p {
-    max-width: 50rem;
-    margin: 0 auto;
+.testimonials__card {
+    padding-inline: var(--space-2);
 }
 
-.quote {
+.testimonials__quote {
+    font-family: 'RobotoItalic', sans-serif;
+    font-size: var(--font-size-quote);
     font-weight: var(--font-weight-light);
+    padding-bottom: var(--space-2);
     
 }
 
-.signature {
-    font-weight: bold;
+.testimonials__signature {
+    font-weight: var(--font-weight-extrabold);
     text-align: right;
-    font-size: 30px;
+    font-size: var( --font-size-quote);
+}
+
+
+/*----------------------- Media Queries -----------------------*/
+
+/* Tablet */
+@media (min-width: 768px) {
+    .testimonials {
+        padding-inline: var(--space-3);
+    }
+}
+
+/* Desktop & Horizontal Tablet */
+@media (min-width: 1024px) {
+    .testimonials {
+        padding-inline: var(--space-6);
+    }
+
+    .testimonials__card {
+        padding-inline: var(--space-6);
+    }
+
+}
+
+/* XXL Desktop */
+@media (min-width: 1536px) {
+   .testimonials {
+      padding-inline: calc((100% - 1440px) / 2);;
+    }
 }
