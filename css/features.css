@@ -1,23 +1,19 @@
 .features {
     padding-block: var(--space-5);
     margin-inline: var(--space-2);
-    /* padding: 50px 20px; */
-    /* background-color: white; */
-    /* margin: 0; */
+
 }
 
 .features__title {
     text-align: center;
     font-size: var(--font-size-h2);
     padding-bottom: var(--space-3);
-    /* margin-bottom: 3rem; */
     color: var(--color-text-dark);
 }
 
 .features__cards {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     gap: var(--space-4);
     justify-content: center;
 }
@@ -46,7 +42,8 @@
 /* Tablet */
 @media (min-width: 768px) {
     .features {
-        padding-inline: var(--space-3);
+        padding-inline: unset;
+        margin-inline: var(--space-5);
     }
 
    .features__cards {
@@ -59,7 +56,6 @@
         width: 40%;
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
     }
 
@@ -75,7 +71,7 @@
 /* Desktop & Horizontal Tablet */
 @media (min-width: 1024px) {
     .features {
-        padding-inline: 0;
+        /* padding-inline: 0; */
         margin-inline: var(--space-6);
     }
 
@@ -94,9 +90,7 @@
 
 /* XL Desktop */
 @media (min-width: 1280px) {
-    .features__cards {
-        justify-content: center;
-    }
+  
     .features__card {
       width: 20%;
     }
