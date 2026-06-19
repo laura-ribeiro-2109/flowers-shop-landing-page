@@ -1,36 +1,104 @@
 .features {
-    padding: 50px 20px;
-    background-color: white;
-    margin: 0;
+    padding-block: var(--space-5);
+    margin-inline: var(--space-2);
+
 }
 
-.features-title {
+.features__title {
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 3rem;
-    color: #1f2937;
+    font-size: var(--font-size-h2);
+    padding-bottom: var(--space-3);
+    color: var(--color-text-dark);
 }
 
-.features-cards {
+.features__cards {
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-direction: column;
+    gap: var(--space-4);
     justify-content: center;
 }
 
-.features-individual {
-    width: 10rem;
+.features__card {
+    /* width: 10rem; */
     text-align: center;
 }
 
-.features-img {
+.features__image {
+    /* max-width: ; */
     width: 100%;
-    border: 3px solid #3882F6;
+    border: 3px solid var(--color-border);
     border-radius: 20px;
     margin-bottom: 10px;
 }
 
-.features-text {
-    color: #1f2937;
-    font-size: 16px;
+.features__text {
+    color: var(--color-text-dark);
+    font-size: var(--font-size-body)
+}
+
+
+/*----------------------- Media Queries -----------------------*/
+
+/* Tablet */
+@media (min-width: 768px) {
+    .features {
+        padding-inline: unset;
+        margin-inline: var(--space-5);
+    }
+
+   .features__cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .features__card {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    .features__image {
+        width: 100%;
+    }
+}
+
+/* Desktop & Horizontal Tablet */
+@media (min-width: 1024px) {
+    .features {
+        /* padding-inline: 0; */
+        margin-inline: var(--space-6);
+    }
+
+    .features__cards {
+        flex-direction: row;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    .features__image {
+        width: 100%;
+    }
+}
+
+/* XL Desktop */
+@media (min-width: 1280px) {
+  
+    .features__card {
+      width: 20%;
+    }
+}
+
+/* XXL Desktop */
+@media (min-width: 1536px) {
+   .features__cards {
+      padding-inline: calc((100% - 1440px) / 2);;
+    }
 }

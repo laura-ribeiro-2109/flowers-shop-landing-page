@@ -25,15 +25,20 @@ Variables, reset, globals
     --space-7: 6rem;    /* 96px */
 
     --color-bg-dark: #1F2937;
+    --color-text-dark: #1F2937;
+    --color-text-light: #F9FAF8;
     --color-text-hero-main: #F9FAF8;
     --color-text-hero-secondary: #E5E7EB;
     --color-text-header-logo: #F9FAF8;
     --color-bg-button: #3882F6;
+    --color-border: #3882F6;
     --color-text-quote: #1F2937;  
 
     --font-size-hero-main:      clamp(2rem, 1.648rem + 1.408vw, 3rem);     /* 32px → 48px */
     --font-size-hero-secondary: clamp(1rem, 0.956rem + 0.176vw, 1.125rem); /* 16px → 18px */
-    --font-size-quote:          clamp(1.5rem, 1.236rem + 1.056vw, 2.25rem);/* 24px → 36px */
+    --font-size-body: clamp(1rem, 0.956rem + 0.176vw, 1.125rem); /* 16px → 18px */
+    --font-size-h2: clamp(1.75rem, 1.662rem + 0.352vw, 2rem); /* 28px → 32px */
+    --font-size-quote: clamp(1.5rem, 1.236rem + 1.056vw, 2.25rem);/* 24px → 36px */
 
     --font-weight-extrabold: 900;
     --font-weight-light: 300; 
@@ -68,35 +73,5 @@ ul li {
 }
 
 main {
-    background-color: var(--color-bg-dark);
-    padding-inline: var(--space-2);
     position: relative;
 }
-
- /* Tablet */
-    @media (min-width: 768px) {
-        main {
-            padding-inline: var(--space-3);
-        }
-    }
-
-    /* Desktop & Horizontal Tablet */
-    @media (min-width: 1024px) {
-        main {
-            padding-inline: var(--space-4);
-        }
-    }
-
-    /* XL Desktop */
-    @media (min-width: 1280px) {
-        main {
-            padding-inline: var(--space-6);
-        }
-    }
-
-    /* XXL Desktop */
-    @media (min-width: 1536px) {
-        main {
-            padding-inline: calc((100% - 1440px) / 2);
-        }
-    }

@@ -1,0 +1,88 @@
+.products {
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding-block: var(--space-5);
+    margin-inline: var(--space-2);
+}
+
+
+.products__content h1 {
+    font-size: var(--font-size-hero-main);
+    color: var(--color-text-dark);
+    padding-bottom: var(--space-1);
+}
+
+.products__content p {
+    font-size: var(--font-size-body);
+    color: var(--color-text-dark);
+}
+
+.products__grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.products__card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    width: 100%;
+}
+
+.products__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.products__card-content h2 {
+    font-size: var(--font-size-h2);
+    color: var(--color-text-dark);
+}
+
+.products__card-content p {
+    font-size: var(--font-size-body);
+    color: var(--color-text-dark);
+}
+
+/*----------------------- Media Queries -----------------------*/
+
+/* Tablet */
+@media (min-width: 768px) {
+
+    .products__grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: var(--space-3);
+    }
+
+    .products__card {
+        width: calc((100% - var(--space-3)) / 2)
+    }
+}
+
+/* Desktop & Horizontal Tablet */
+@media (min-width: 1024px) {
+   
+}
+
+/* XL Desktop */
+@media (min-width: 1280px) {
+   
+}
+
+/* XXL Desktop */
+@media (min-width: 1536px) {
+    .products__grid {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: var(--space-3);
+    }
+}
