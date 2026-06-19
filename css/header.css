@@ -10,6 +10,7 @@ header {
 
 .logo {
     margin: 0 0.25rem;
+    position: relative;
     z-index: 11;
 }
 
