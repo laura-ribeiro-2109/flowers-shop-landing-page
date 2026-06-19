@@ -1,0 +1,23 @@
+.cta {
+   background-color: white;
+}
+
+.cta-box {
+    background-color: #3882F6;
+    color: white;
+    margin: 60px 15%;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+}
+
+.cta-btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
