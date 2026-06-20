@@ -36,12 +36,13 @@
 }
 
 .about__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap: var(--space-7);
     margin: var(--space-3) 0;
     text-align: center;
     padding-block: var(--space-6);
+    padding-inline: var(--space-6);
 }
 
 .about__topics h2 {
@@ -57,7 +58,7 @@
 @media (max-width: 1280px) {
 
     .about__intro {
-        display: grid;
+        flex-direction: column;
 
     }
 
