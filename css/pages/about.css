@@ -3,6 +3,7 @@
     font-size: var(--font-size-body);
     color: var(--color-text-dark);
     padding-inline: calc((100% - 1440px) / 2);
+    padding-block: var(--space-5);
 }
 
 .about h1 {
@@ -40,6 +41,7 @@
     gap: var(--space-7);
     margin: var(--space-3) 0;
     text-align: center;
+    padding-block: var(--space-6);
 }
 
 .about__topics h2 {
