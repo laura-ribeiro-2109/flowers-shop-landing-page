@@ -36,8 +36,8 @@ Variables, reset, globals
     --color-border: #3882F6;
     --color-text-quote: #1F2937;  
 
-    --font-size-hero-main:      clamp(2rem, 1.648rem + 1.408vw, 3rem);     /* 32px → 48px */
-    --font-size-hero-secondary: clamp(1rem, 0.956rem + 0.176vw, 1.125rem); /* 16px → 18px */
+    --font-size-hero-main:      clamp(2.75rem, 2.2rem + 2.2vw, 4.5rem);     /* Changed from (32px → 48px) to (44px - 72px) */
+    --font-size-hero-secondary: clamp(1.125rem, 1rem + 0.5vw, 1.375rem); /* from (16px → 18px) to (18px - 22px) */
     --font-size-body: clamp(1rem, 0.956rem + 0.176vw, 1.125rem); /* 16px → 18px */
     --font-size-small: clamp(1rem, 0.956rem + 0.176vw, 1.125rem); /* 16px → 18px */
     --font-size-h2: clamp(1.75rem, 1.662rem + 0.352vw, 2rem); /* 28px → 32px */
