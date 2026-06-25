@@ -1,6 +1,7 @@
 .banner {
     padding-block: var(--space-5);
-    margin-inline: var(--space-2);
+    padding-inline: var(--space-2);
+    margin-inline: 0;
 }
 
 .banner__content {
@@ -53,4 +54,18 @@
         margin-inline: calc(var(--space-7) * 2);
     }
 
+}
+
+/* XL Desktop */
+@media (min-width: 1280px) {
+    .banner {
+        padding-inline: calc(var(--space-7) * 2);
+    }
+}
+
+/* XXL Desktop */
+@media (min-width: 1536px) {
+    .banner {
+        padding-inline: calc((100% - 1440px) / 2 + var(--space-4));
+    }
 }
