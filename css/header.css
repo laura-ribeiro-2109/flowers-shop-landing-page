@@ -55,6 +55,9 @@ nav {
 /* Open menu */
 .menu-toggle:checked ~ nav {
     height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* SVG Animation */
@@ -74,13 +77,13 @@ nav ul {
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
-    padding-top: calc(var(--space-7) + var(--space-2));
-    padding-bottom: var(--space-2);
+    justify-content: center;
+    align-items: center;
+    padding-block: var(--space-2);
     margin-inline: var(--space-2);
 }
 nav ul li {
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px 0;
 }
 
 nav ul li a {
