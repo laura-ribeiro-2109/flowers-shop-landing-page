@@ -85,7 +85,7 @@
 /* Desktop & Horizontal Tablet */
 @media (min-width: 1024px) {
     .products__grid {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
 
     .products__content h1,
@@ -94,8 +94,7 @@
     }
 
     .products__card {
-        width: calc((100% - var(--space-3)) / 3);
-
+        width: calc((100% - (var(--space-3) * 3)) / 4);
     }
 }
 
