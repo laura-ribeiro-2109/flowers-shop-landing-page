@@ -35,6 +35,16 @@
     padding-block: var(--space-1)
 }
 
+/* added figure caption for accessibility */
+.features__card figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.features__card figcaption {
+    text-align: center;
+}
+
 .features__text {
     line-height: 1.5;
     color: var(--color-text-dark);
